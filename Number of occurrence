@@ -1,0 +1,9 @@
+class Solution:
+    def count(self, arr, x):
+        N = len(arr)
+        count = 0
+        for i in range(N):
+            if x == arr[i]:
+                count +=1
+        return count
+                
