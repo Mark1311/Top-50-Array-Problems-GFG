@@ -1,0 +1,15 @@
+Sol. 01:-
+
+    def findDuplicates(self, arr):
+        set1 = set()
+        dup = set()
+        for i in arr:
+            if i in set1:
+                dup.add(i)
+            set1.add(i)
+        return sorted(dup)
+
+Sol. 02:-
+
+def find_duplicates(arr):
+    return [x for x in arr if arr.count(x) > 1]
